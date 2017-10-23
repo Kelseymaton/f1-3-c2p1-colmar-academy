@@ -1,0 +1,416 @@
+/* overall website */
+
+@font-face {
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
+}
+
+
+
+body {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 0px 0 19px 0;
+  color: #3E3F40;
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* top navigation */
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 24px auto 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  width: 200px;
+}
+
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.header-menu {
+  display: block;
+  padding-left: 25px;
+}
+
+.logo .name-pt2 {
+  color: grey;
+}
+
+ul {
+  display:block;
+}
+
+.header-menu li {
+  display: inline-flex;
+  list-style: none;
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+.header-menu li:hover{
+  color: #0C7F1D;
+  font-weight: bold;
+  transition-duration: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* first banner */
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #024416;
+}
+
+.banner .banner-left {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.banner-left img{
+  width: 100%;
+  height: auto;
+}
+
+.banner-content{
+   width: 40%;
+}
+
+.content-right h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+.content-right p {
+  color: white;
+}
+
+
+.start-here-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDB33;
+  width: 250px;
+  height: 30px;
+}
+
+.start-here-button .span {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2nd banner, main content */
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content .content-left {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.main-content .content-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 40%;
+  margin-right: 16px;
+}
+
+.content-left img {
+  width: 100%;
+  height: auto;
+}
+
+.main-content h2{
+  font-size: 40px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.Orientation-date, .our-campus, .our-guest, .Design-Prototype, .Now-and-then {
+    display: flex;
+    align-items: center;
+}
+
+.content-right img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.info {
+  line-height: 1.5;
+}
+
+.content-right .info {
+    width: 65%;
+}
+
+.info h3 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.info p{
+  color: #3E3F40;
+}
+
+.our-campus {
+  border-top: #3E3F40 solid 1px;
+  border-bottom: #3E3F40 solid 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3rd banner, courses */
+
+.courses{
+  background-color: #D9D9D9;
+  padding-top: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  /* margin-bottom: 32px; */
+}
+
+
+.course {
+  margin: 0 32px 32px 0;
+  background-color: white;
+  width: 30%;
+}
+
+.course-info {
+  margin: 16px 0 32px 16px;
+}
+
+.course-info h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #3E3F40;
+}
+
+.course-info .middle {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.courses-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 32px 72px;
+}
+
+.course img{
+  width: 100%;
+}
+
+.img.course {
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* 4th Sec: Thesis Exhibit */
+
+.content-left video {
+  width: 100%;
+}
+
+.Design-Prototype {
+  margin-top: 16px;
+}
+
+
+
+/* footer */
+footer .f {
+  margin-top: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 24px;
+  border-top: 1px solid grey;
+  height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive - for phone*/
+@media screen and (max-width: 650px){
+
+.responsive.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  margin: 12px;}
+
+.banner {
+  display: block;
+}
+
+.banner .banner-left{
+  width: 100%;
+  margin: 0;
+}
+.responsive.nav img{
+  width: 50px;
+  height: auto;}
+
+header .header-menu{
+  display: none;}
+
+.content-right h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 40px;
+  padding-bottom: 20px;
+  margin-left: 16px;
+  margin-top: 32px;
+}
+
+.banner .content-right p{
+  padding-left: 16px;
+}
+
+.start-here-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDB33;
+  width: 250px;
+  height: 30px;
+  margin-bottom: 32px;
+  margin-left: 16px;}
+
+.main-content .content-left {
+  display: none;}
+
+.main-content .content-right{
+  display: block;
+  margin-top: 16px;
+  width: 100%;}
+
+.content-right.img {
+  height: auto;
+  margin: 16px;}
+
+.responsive.img {
+  display: block;}
+
+
+.responsive.video{
+  display: block;
+  margin-top: 16px;}
+
+.Design-Prototype{
+  display: none;}
+
+.Now-and-then{
+  display: none;}
+
+}
+
+
+/* responsive - for computer*/
+@media screen and (min-width: 650px){
+.responsive.nav {
+  display: none;}
+
+img.responsive{
+  display: none;}
+
+.responsive.video{
+  display: none;}
+
+}
